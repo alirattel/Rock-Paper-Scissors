@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(201, 0, 0);
+}
+
+/* --- Result --- */
+
+.result {
+    margin: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.HR {
+    /* margin-top: -80px; */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#result-typing {
+    padding-right: 50px;
+    font-size: larger;
+    color: rgb(201, 0, 0);
+}
+
+/* --- img --- */
+
+.image {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-start {
+    text-align: center;
+}
+
+.image #w-l,
+#w-r,
+#m-l,
+#m-r,
+#h-l,
+#h-r {
+    margin: 60px 45px;
+    display: none;
+}
+.image #w-r,
+#h-r {
+    transform: rotate(-30deg);
+}
+.image #h-l,#w-l {
+    transform: rotate(30deg);
+}
+/* --- buttons --- */
+
+.play {
+    display: flex;
+    justify-content: center;
+}
+
+.play #rock,
+#paper,
+#scissors,
+#play1 {
+    margin: 0px 20px;
+    font-size: 50px;
+    background: transparent;
+    border: transparent;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: rgb(201, 0, 0);
+}
+@media (max-width:505px) {
+    #img-start-1 img {
+        width: 100%;
+    }
+}
+@media (max-width:450px) {
+    
+    .result {
+        font-size: 10px;
+    }
+
+    .result #result-typing {
+        padding-right: 30px;
+    }
+
+    .image #h-r,
+    #h-l,
+    #m-r,
+    #m-l,
+    #w-r,
+    #w-l {
+        width: 100px;
+        height: 170px;
+        margin: 60px 22px;
+    }
+
+    .play #rock,
+    #paper,
+    #scissors,
+    #play1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:310px) {
+    
+    .result {
+        font-size: 8px;
+    }
+
+    .result #result-typing {
+        padding-right: 30px;
+    }
+    .image {
+        height: 250px;
+    }
+    .image #h-r,
+    #h-l,
+    #m-r,
+    #m-l,
+    #w-r,
+    #w-l {
+        width: 70px;
+        height: 110px;
+    }
+    .play #rock,
+    #paper,
+    #scissors,
+    #play1 {
+        font-size: 22px;
+    }
+}
+@media (max-width:250px) {
+    
+    .result #result-typing {
+        padding-right: 20px;
+    }
+    .play #rock,
+    #paper,
+    #scissors,
+    #play1 {
+        font-size: 12px;
+    }
+    .image #h-r,
+    #h-l,
+    #m-r,
+    #m-l,
+    #w-r,
+    #w-l {
+        width: 50px;
+        height: 110px;
+        margin: 60px 15px;
+    }
+}
